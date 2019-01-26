@@ -49,7 +49,7 @@ up to host static and media files.
 This project can be cloned from: **[###]**.
 
 1. Navigate to desired folder in your terminal & type:
-    `$ git clone https://github.com/vieiraa360/###`
+    `$ git clone https://github.com/vieiraa360/garage-sale`
 2. Create & Activate a new Virtual Environment in terminal:
     Create: `$ python3 -m venv ~/virtualenvs/name_of_environment`
     Activate: `$ source ~/virtualenvs/name_of_environment/bin/activate`
