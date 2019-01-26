@@ -112,7 +112,7 @@ if "DATABASE_URL" in os.environ:
 	DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'database',
+        'NAME': 'garage-sale',
         'USER': 'ubuntu',
         'PASSWORD':'pr0v1da',
         'HOST':'127.0.0.1',
