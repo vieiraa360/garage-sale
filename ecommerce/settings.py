@@ -101,10 +101,23 @@ COOKIE_CONSENT_CACHE_BACKEND = {
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-
+"""
 if "DATABASE_URL" in os.environ:
 	DATABASES = {
 	'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
+"""
+
+if "DATABASE_URL" in os.environ:
+	DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'database',
+        'USER': 'ubuntu',
+        'PASSWORD':'pr0v1da',
+        'HOST':'127.0.0.1',
+        'PORT':'',
+    }
 }
 else:
 	print("Postgres URL not found, using sqlite instead")
