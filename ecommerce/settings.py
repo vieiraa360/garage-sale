@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 import dj_database_url
 import locale
+import django_heroku
 
 
 if os.path.exists('env.py'):
@@ -234,3 +235,5 @@ EMAIL_USE_TLS = True
 
 ADMINS = [('admin', EMAIL_HOST_USER)]
 MANAGERS = ADMINS
+
+django_heroku.settings(locals())
