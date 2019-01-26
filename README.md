@@ -82,10 +82,3 @@ os.environ.setdefault("AWS_STORAGE_BUCKET_NAME", "<aws bucket name>")
 7. Go to your browser and type '127.0.0.1:8000' in the address bar
 8. You should see the app running on your browser
 9. Log in to the admin panel by going to '127.0.0.1:8000/admin' and log in using the superuser credentials
-
-## Unit tests
-
-The tests can be found in the tests.py file within each App folder. 
-To run the tests, activate the virtual environment and type:
-
-`$ python manage.py test`
