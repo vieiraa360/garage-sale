@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% load bootstrap_tags %}
+
+{% block content %}
+
+<script>
+$.stellar({
+    horizontalScrolling: false,
+    responsive: true
+});
+</script>
+
+
+    <div class="hero" id="bg">
+      <div class="overlay"></div>
+      <div class="cover text-center" style="background-image: url(https://s3.eu-west-2.amazonaws.com/salesite/garageSale-bg.jpg);" background-position: 0% 0%;" data-stellar-background-ratio="0.5">
+        <div class="desc animate-box">
+          <h2><strong>Garage Sale!</strong></h2>
+          <p><a class="btn btn-primary btn-lg btn-learn" href="/products/"><strong>All items</strong></a> <a class="btn btn-primary btn-lg popup-youtube btn-video" href="/contact/" target="_blank"><i class="icon-play"></i> <strong>Contact</strong></a></p>
+        </div>
+      </div>
+    </div>
+
+<br><br>
+    <!-- Page Content -->
+
+
+<div class="container">
+   <div class="row">
+        <div class="col-sm-4 my-4">
+          <div class="card">
+           <a href="/products/" target="_parent"><img class="card-img-top grow" src="https://s3.eu-west-2.amazonaws.com/salesite/Capture.PNG" width="100%" alt="Kambo frog"></a>
+            <div class="card-body">
+              <h4 class="card-title">SALE</h4>
+              <p class="card-text">All items.<br>
+              Everything on sale!.</p>
+            </div>
+            <div class="card-footer">
+              <a href="/products/" tagret="_parent" class="btn btn-primary">By now!</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top grow" src="https://s3.eu-west-2.amazonaws.com/salesite/draytek.jpg" width="100%" alt="Kambo frog">
+            <div class="card-body">
+              <h4 class="card-title">DRAYTEK ROUTER</h4>
+              <p class="card-text">Ideal for your small office or home business/office.<br> 
+              It provides connectivity to your PCs or other Internet-connected devices (laptops, tablets, games consoles, smartphones) via its 4 built-in Gigabit Ethernet ports.</p>
+            </div>
+            <div class="card-footer">
+              <a href="/products/" class="btn btn-primary">Find Out More!</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top grow" src="https://s3.eu-west-2.amazonaws.com/salesite/memory-upgrade.jpg" width="100%" alt="Kambo frog">
+            <div class="card-body">
+              <h4 class="card-title">PC MEMORY UPGRADE</h4>
+              <p class="card-text">Upgrade the memory in your PC using this Memory Kit.</p>
+            </div>
+            <div class="card-footer">
+              <a href="/products/" class="btn btn-primary">Find Out More!</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+
+   <br><br>
+
+ <div class="row" id="bottom-content">
+        <div class="col-lg-3">
+                    <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                        <p style="text-align:center; margin-top:20px;">
+                            <img src="https://s3.eu-west-2.amazonaws.com/salesite/draytek.jpg" class="img-responsive" alt="frog">
+                        </p>
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Draytek router</h3>
+                                <p>Buy now!</p>
+                                <a class=" btn btn-default" href="/products/"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                            </div>
+                        </div>
+                    </div>
+                
+        </div>
+       <div class="col-lg-3">
+                    <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                        <p style="text-align:center; margin-top:20px;">
+                            <img src="https://s3.eu-west-2.amazonaws.com/salesite/memory-upgrade.jpg" class="img-responsive" alt="frog">
+                        </p>
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Memory</h3>
+                                <p>DDR3 RAM memory</p>
+                                <a class=" btn btn-default" href="/products/"><span class="glyphicon glyphicon-plus"> INFO</span></a>
+                            </div>
+                        </div>
+                    </div>
+                
+        </div>
+          
+
+        <div class="col-lg-3 col-md-6">
+            <h3>Categories:</h3>
+                <ul>
+                <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="/products/"><i class="fa fa-shopping-cart"></i> Items</a></li>
+                <!--<li><a href="/faqs/"><i class="fa fa-question-circle"></i> FAQs</a></li>
+                <li><a href="/about/"><i class="fa fa-user"></i> About</a></li>-->
+                <li><a href="/contact/"><i class="fa fa-envelope-square"></i> Contact</a></li>
+                <li><a href="/accounts/register/"><i class="fa fa-check-circle"></i> Register</a></li>
+                <li><a href="/accounts/login/"><i class="fa fa-windows"></i> Login</a></li>
+                </ul>
+         </div>
+
+         <div class="col-lg-3 col-md-6">
+                <h3>Contact:</h3>
+                <p>Have any questions or feedback? Please contact me!</p>
+                <p><a href="mailto:vieiraa360@gmail.com" title="Contact me!"><i class="fa fa-envelope"></i> Email me!</a></p>
+          </div>
+
+
+
+            <div>  
+                <h3>Share:</h3>           
+                  <a href="http://twitter.com" id="gh" target="_blank" title="Twitter">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                  </span>
+                Twitter</a>
+
+                  <a href="http://facebook.com/" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square-o fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i></span>Facebook</a>
+            </div>
+
+        <br/>
+
+ </div>
+
+</div>
+
+    <!-- /.container -->
+    <footer>
+      <div class="row">
+        <p>
+          <span>Copyright © Kambolife | <a href="https://s3.eu-west-2.amazonaws.com/kambo-site/media/images/policy.png" target="_blank">Privacy Policy</a> | <a href="https://s3.eu-west-2.amazonaws.com/kambo-site/cookielaw/docs/cookies_policy.pdf" target="_blank">Cookies Policy</a> | <a href="https://s3.eu-west-2.amazonaws.com/kambo-site/media/images/terms.PNG" target="_blank">Terms of Use</span>
+        </p>
+      </div>
+    </footer>
+    
+{% endblock %}
