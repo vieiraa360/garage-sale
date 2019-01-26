@@ -115,8 +115,8 @@ if "DATABASE_URL" in os.environ:
         'NAME': 'garage-sale',
         'USER': 'ubuntu',
         'PASSWORD':'pr0v1da',
-        'HOST':'127.0.0.1',
-        'PORT':'',
+        'HOST':'localhost',
+        'PORT':'5432',
     }
 }
 else:
