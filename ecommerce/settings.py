@@ -47,10 +47,10 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'accounts',
     'products',
-    'cart',
-    'checkout',
+    #'cart',
+    #'checkout',
     'paypal.standard.ipn',
-    'payment',
+    #'payment',
     'storages',
     'posts',
     'blog',
@@ -83,7 +83,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-                'cart.contexts.cart_contents'
             ],
         },
     },
@@ -201,7 +200,7 @@ STATICFILE_FINDERS = (
 )
 
 
-PAYPAL_RECEIVER_EMAIL = 'vieiraa360@gmail.com'
+PAYPAL_RECEIVER_EMAIL = 'vieira.helder1@gmail.com'
 PAYPAL_TEST = True
 
 
