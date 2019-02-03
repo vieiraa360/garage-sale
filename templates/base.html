@@ -25,19 +25,19 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Garage Sale</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+           <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">-->
+           <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
             <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
             <link rel="stylesheet" href="{% static 'css/costum.css' %}">
             <link rel="stylesheet" href="{% static 'admin/css/base.css' %}">
-            <link rel="stylesheet" href="{% static 'js/stellar.js' %}">
-            <link rel="stylesheet" href="https://s3.eu-west-2.amazonaws.com/salesite/css/costum1.css">
-            <link rel="stylesheet" href="https://s3.eu-west-2.amazonaws.com/salesite/css/blog.css">
+           <!-- <link rel="stylesheet" href="https://s3.eu-west-2.amazonaws.com/salesite/css/costum1.css">-->
+           <!-- <link rel="stylesheet" href="https://s3.eu-west-2.amazonaws.com/salesite/css/blog.css">-->
+        {% block head_js%}
+            <script src="{% static 'js/bootstrap.min.js' %}"></script>
             <script src="{% static 'js/tinymce/jquery.tinymce.min.js' %}"></script>
             <script src="{% static 'js/tinymce/tinymce.min.js' %}"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.12.0/stellar-sdk.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
-        {% block head_js %}
+            <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+           <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>-->
         {% endblock head_js %}
     </head>
     <body>
@@ -90,5 +90,15 @@
         <div>
             {% block content %} {% endblock %}
         </div>
+        
+        
+    <script type="text/javascript">
+        $(window).stellar({
+        scrollProperty: 'scroll',
+        horizontalScrolling: false,
+        positionProperty: 'position'
+       });
+    </script>
+        
     </body>
 </html>

@@ -1,20 +1,22 @@
 {% extends 'base.html' %}
 {% load bootstrap_tags %}
 
+
+{% load staticfiles %}
+{% block head_js%}
+
+            <script src="{% static 'js/jquery.min.js' %}"></script>
+            <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+
+
+
+{% endblock head_js %}
 {% block content %}
-
-
-<script>
-$.stellar({
-    horizontalScrolling: false,
-    responsive: true
-});
-</script>
 
 
     <div class="hero" id="bg">
       <div class="overlay"></div>
-      <div class="cover text-center" style="background-image: url(https://s3.eu-west-2.amazonaws.com/salesite/garageSale-bg.jpg);" background-position: 0% 0%;" data-stellar-background-ratio="0.5">
+      <div class="cover text-center" style="background-image: url(https://s3.eu-west-2.amazonaws.com/salesite/garageSale-bg.jpg);" data-stellar-background-ratio="0.5">
         <div class="desc animate-box">
           <h2><strong>Garage Sale!</strong></h2>
           <p><a class="btn btn-primary btn-lg btn-learn" href="/products/"><strong>All items</strong></a> <a class="btn btn-primary btn-lg popup-youtube btn-video" href="/contact/" target="_blank"><i class="icon-play"></i> <strong>Contact</strong></a></p>
